@@ -27,7 +27,7 @@ class Route{
   blocksTravelled() {
     let vert = Math.abs(this.beginningLocation.vertical - this.endLocation.vertical)
     let startHor, endHor
-    let streets = Route.eastwest()
+    let streets = this.eastwest()
     for(let i = 0; i < streets.length; i++){
       if(beginningLocation.horizontal === streets[i]){
         startHor = i
