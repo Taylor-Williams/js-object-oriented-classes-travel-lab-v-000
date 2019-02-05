@@ -13,15 +13,17 @@ class Route{
     this.beginningLocation = beginningLocation
     this.endLocation = endLocation
   }
-  const eastWest = [
-    '1st Avenue',
-    '2nd Avenue',
-    '3rd Avenue',
-    'Lexington Avenue',
-    'Park',
-    'Madison Avenue',
-    '5th Avenue'
-  ];
+  eastWest() {
+    return [
+      '1st Avenue',
+      '2nd Avenue',
+      '3rd Avenue',
+      'Lexington Avenue',
+      'Park',
+      'Madison Avenue',
+      '5th Avenue'
+    ];
+  }
   blocksTravelled() {
     let vert = Math.abs(this.beginningLocation.vertical - this.endLocation.vertical)
     let startHor, endHor
