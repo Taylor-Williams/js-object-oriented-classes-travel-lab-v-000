@@ -33,6 +33,8 @@ class Route{
     return hor + vert;
   }
   estimatedTime(peak = false) {
-    peak ? return 2 * blocksTravelled() : return 3 * blocksTravelled
+    let travelTime = 0
+    peak ? travelTime = 2 * blocksTravelled() : travelTime = 3 * blocksTravelled
+    return travelTime
   }
 }
