@@ -9,8 +9,14 @@ class Driver{
   }
 }
 class Route{
-  constructor(beginningLocation, endingLocation){
+  constructor(beginningLocation, endLocation){
     this.beginningLocation = beginningLocation
     this.endLocation = endLocation
+  }
+  
+  blocksTravelled() {
+    let hor = beginningLocation.horizontal - endLocation.horizontal
+    let vert = beginningLocation.vertical - endLocation.vertical
+    return hor + vert
   }
 }
