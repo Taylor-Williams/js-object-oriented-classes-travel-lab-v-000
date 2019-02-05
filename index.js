@@ -1,3 +1,12 @@
+let eastWest = [
+  '1st Avenue',
+  '2nd Avenue',
+  '3rd Avenue',
+  'Lexington Avenue',
+  'Park',
+  'Madison Avenue',
+  '5th Avenue'
+];
 class Driver{
   constructor(name, startDate){
     this.name = name
@@ -13,26 +22,14 @@ class Route{
     this.beginningLocation = beginningLocation
     this.endLocation = endLocation
   }
-  get eastWest() {
-    return [
-      '1st Avenue',
-      '2nd Avenue',
-      '3rd Avenue',
-      'Lexington Avenue',
-      'Park',
-      'Madison Avenue',
-      '5th Avenue'
-    ];
-  }
   blocksTravelled() {
     let vert = Math.abs(this.beginningLocation.vertical - this.endLocation.vertical)
     let startHor, endHor
-    let streets = eastwest()
-    for(let i = 0; i < streets.length; i++){
-      if(beginningLocation.horizontal === streets[i]){
+    for(let i = 0; i < eastWest.length; i++){
+      if(beginningLocation.horizontal === eastWest[i]){
         startHor = i
       }
-      if(endLocation.horizontal === streets[i]){
+      if(endLocation.horizontal === eastWest[i]){
         endHor = i
       }
     }
