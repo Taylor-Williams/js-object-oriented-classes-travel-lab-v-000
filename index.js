@@ -13,7 +13,7 @@ class Route{
     this.beginningLocation = beginningLocation
     this.endLocation = endLocation
   }
-  
+
   blocksTravelled() {
     let hor = beginningLocation.horizontal - endLocation.horizontal
     let vert = beginningLocation.vertical - endLocation.vertical
