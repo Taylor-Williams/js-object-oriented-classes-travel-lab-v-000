@@ -18,11 +18,11 @@ class Driver{
   }
 }
 class Route{
-  constructor(beginningLocation, endLocation){
+  constructor(beginningLocation, endLocation) {
     this.beginningLocation = beginningLocation
     this.endLocation = endLocation
   }
-  aveToInt(ave){
+  aveToInt(ave) {
     return eastWest.indexOf(ave)
   }
   blocksTravelled() {
