@@ -1,7 +1,16 @@
 class Driver{
-  constructor(name, startDate){
+  constructor(name, date){
     this.name = name
-    this.startDate = startDate
+    this.startDate = date
+  }
+
+  function startDate(date){
+    return Date.parse(date)
+  }
+
+  function yearsExperienceFromBeginningOf(year){
+    yearRequest = Date.new(year)
+    return startDate(date) - yearRequest
   }
 }
 class Route{
