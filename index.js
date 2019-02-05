@@ -4,11 +4,11 @@ class Driver{
     this.startDate = date
   }
 
-  function startDate(date){
+  startDate(date){
     return Date.parse(date)
   }
 
-  function yearsExperienceFromBeginningOf(year){
+  yearsExperienceFromBeginningOf(year){
     yearRequest = Date.new(year)
     return startDate(date) - yearRequest
   }
