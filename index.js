@@ -13,7 +13,7 @@ class Route{
     this.beginningLocation = beginningLocation
     this.endLocation = endLocation
   }
-  eastWest() {
+  get eastWest() {
     return [
       '1st Avenue',
       '2nd Avenue',
