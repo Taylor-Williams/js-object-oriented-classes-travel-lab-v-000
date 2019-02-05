@@ -9,6 +9,10 @@ class Driver{
   }
 }
 class Route{
+  constructor(beginningLocation, endLocation){
+    this.beginningLocation = beginningLocation
+    this.endLocation = endLocation
+  }
   const eastWest = [
     '1st Avenue',
     '2nd Avenue',
@@ -18,11 +22,6 @@ class Route{
     'Madison Avenue',
     '5th Avenue'
   ];
-  constructor(beginningLocation, endLocation){
-    this.beginningLocation = beginningLocation
-    this.endLocation = endLocation
-  }
-
   blocksTravelled() {
     let vert = Math.abs(this.beginningLocation.vertical - this.endLocation.vertical)
     let startHor, endHor
