@@ -13,7 +13,7 @@ class Route{
     this.beginningLocation = beginningLocation
     this.endLocation = endLocation
   }
-  eastWest = [
+  const eastWest = [
     '1st Avenue',
     '2nd Avenue',
     '3rd Avenue',
