@@ -9,7 +9,7 @@ class Driver{
   }
 }
 class Route{
-  let eastWest = [
+  const eastWest = [
     '1st Avenue',
     '2nd Avenue',
     '3rd Avenue',
