@@ -22,17 +22,13 @@ class Route{
     this.beginningLocation = beginningLocation
     this.endLocation = endLocation
   }
+  aveToInt(ave){
+    return eastWest.indexOf(ave)
+  }
   blocksTravelled() {
     let vert = Math.abs(this.beginningLocation.vertical - this.endLocation.vertical)
-    let startHor, endHor
-    for(let i = 0; i < eastWest.length; i++){
-      if(beginningLocation.horizontal === eastWest[i]){
-        startHor = i
-      }
-      if(endLocation.horizontal === eastWest[i]){
-        endHor = i
-      }
-    }
+    let startHor = aveToInt(beginningLocation.horizontal)
+    let endLocation = aveToInt(endLocation.horizontal)
     let hor = Math.abs(startHor - endHor)
     return hor + vert
   }
