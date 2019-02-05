@@ -34,7 +34,7 @@ class Route{
   }
   estimatedTime(peak = false) {
     let travelTime = 0
-    peak ? travelTime = 2 * blocksTravelled() : travelTime = 3 * blocksTravelled
+    peak ? travelTime = 2 * blocksTravelled() : travelTime = 3 * blocksTravelled()
     return travelTime
   }
 }
