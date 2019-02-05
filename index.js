@@ -4,3 +4,9 @@ class Driver{
     this.startDate = startDate
   }
 }
+class Route{
+  constructor(beginningLocation, endingLocation){
+    this.beginningLocation = beginningLocation
+    this.endLocation = endLocation
+  }
+}
