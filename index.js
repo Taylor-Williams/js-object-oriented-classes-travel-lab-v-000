@@ -32,4 +32,7 @@ class Route{
     let hor = Math.abs(startHor - endHor);
     return hor + vert;
   }
+  estimatedTime(peak = false) {
+    peak ? return 2 * blocksTravelled() : return 3 * blocksTravelled
+  }
 }
